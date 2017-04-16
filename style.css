@@ -1,6 +1,8 @@
 body {
-	background: #00CB34;
-	background: linear-gradient(to bottom, #4BA034, #040); 
+	background: #4BA034;
+	/*background: linear-gradient(to bottom, #EEE, #4BA034); */
+	background: url('bg.jpg');
+	background-size: cover;
 	background-attachment: fixed;
 }
 
@@ -19,16 +21,18 @@ body {
 }
 
 #header p {
-	float: right;
+	float: left;
+	margin-left: 5%;
 	font-family: "Trebuchet MS";
 	font-size: 1.25em;
 	font-weight: bold;
-	color: #FFF;
+	color: #000;
 }
 
 #menu {
 	clear: both;
 	float: right;
+	margin-right: 15px;
 }
 
 #menu a {
@@ -36,24 +40,30 @@ body {
 	margin-right: 10px;
 	text-decoration: none;
 	font-family: "Helvetica Neue";
-	color: #FFF;
+	color: #000;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	font-weight: bold;
 }
 
 #menu .active {
 	font-weight: bold;
 	background-color: #FFF;	
-	color: #000;
+	color: #4BA034;
 	cursor: default;
 }
 
 #menu .active:hover {
-	color: #000;
+	color: #4BA034;
 }
 
 #menu a:hover {
-	color: #000;
+	color: #4BA034;
+}
+
+#nav {
+	border-bottom: 1px #4BA034 solid;
+	padding-bottom: 1%;
 }
 
 #main {
@@ -61,8 +71,9 @@ body {
 	width: 90%;
 	padding: 5%;
 	padding-top: 1%;
+	padding-bottom: 1%;
 	background-color: #FFF;
-	border-radius: 10px;
+	border-radius: 15px;
 }
 
 #nav {
@@ -70,7 +81,7 @@ body {
 }
 
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-	color: #00CB34;
+	color: #4BA034;
 	font-family: "Helvetica Neue";
 }
 
@@ -78,6 +89,7 @@ body {
 	text-align: center;
 	font-size: 0.8em;
 	font-style: italic;
-	color: #FFF;
+	color: #000;
+	border-top: 1px #4BA034 solid;
 }
 
