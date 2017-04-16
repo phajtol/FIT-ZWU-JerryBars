@@ -1,0 +1,83 @@
+body {
+	background: #00CB34;
+	background: linear-gradient(to bottom, #4BA034, #040); 
+	background-attachment: fixed;
+}
+
+#page {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	width: 100%;
+}
+
+#header img {
+	float:left;
+}
+
+#header p {
+	float: right;
+	font-family: "Trebuchet MS";
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#menu {
+	clear: both;
+	float: right;
+}
+
+#menu a {
+	padding: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	font-family: "Helvetica Neue";
+	color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#menu .active {
+	font-weight: bold;
+	background-color: #FFF;	
+	color: #000;
+	cursor: default;
+}
+
+#menu .active:hover {
+	color: #000;
+}
+
+#menu a:hover {
+	color: #000;
+}
+
+#main {
+	clear: right;
+	width: 90%;
+	padding: 5%;
+	padding-top: 1%;
+	background-color: #FFF;
+	border-radius: 10px;
+}
+
+#nav {
+	font-size: 0.85em;
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+	color: #00CB34;
+	font-family: "Helvetica Neue";
+}
+
+#footer {
+	text-align: center;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #FFF;
+}
+
