@@ -49,8 +49,7 @@ body {
 }
 
 #menu a[href]:focus {
-	color: #4BA034;
-	outline: 2px #4BA034 solid;
+	color: #00F;
 	text-decoration: underline;
 }
 
@@ -88,6 +87,51 @@ body {
 	padding-bottom: 1%;
 	background-color: #FFF;
 	border-radius: 15px;
+}
+
+#content a {
+	text-decoration: underline;
+	color: #F00;
+	cursor: pointer;
+}
+
+#content a[href] {
+	color: #4BA034;
+}
+
+#content a:hover, #content a[href]:hover {
+	text-decoration: none;
+}
+
+#content a:focus {
+	color: #00F;
+}
+
+#content dt {
+	font-weight: bold;
+}
+
+#content dd {
+	margin-bottom: 10%;
+	font-size: 1.3em;
+}
+
+#content .price {
+	font-size: 1.6em;	
+}
+
+#content .availability {
+	color: #008834;
+	font-weight: bold;
+}
+
+#content img, #content dl {
+	float: left;
+}
+
+#content img {
+	width: 40%;
+	height: 40%;
 }
 
 #nav {
@@ -200,6 +244,11 @@ body {
 		width: 95%;
 		padding: 2.5%;
 		background-color: #FFF;
+	}
+	
+	#content img {
+		width: 100%;
+		height: 100%;
 	}
 
 	#nav {
