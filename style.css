@@ -1,6 +1,4 @@
 body {
-	background: #4BA034;
-	/*background: linear-gradient(to bottom, #EEE, #4BA034); */
 	background: url('bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -40,10 +38,20 @@ body {
 	margin-right: 10px;
 	text-decoration: none;
 	font-family: "Helvetica Neue";
-	color: #000;
+	color: #F00;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	font-weight: bold;
+}
+
+#menu a[href] {
+	color: #000;
+}
+
+#menu a[href]:focus {
+	color: #4BA034;
+	outline: 2px #4BA034 solid;
+	text-decoration: underline;
 }
 
 #menu .active {
@@ -58,7 +66,13 @@ body {
 }
 
 #menu a:hover {
+	color: #F00;
+	cursor: default;
+}
+
+#menu a[href]:hover {
 	color: #4BA034;
+	cursor: pointer;
 }
 
 #nav {
@@ -66,7 +80,7 @@ body {
 	padding-bottom: 1%;
 }
 
-#main {
+#content {
 	clear: right;
 	width: 90%;
 	padding: 5%;
@@ -80,7 +94,7 @@ body {
 	font-size: 0.85em;
 }
 
-#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
 	color: #4BA034;
 	font-family: "Helvetica Neue";
 }
@@ -91,5 +105,136 @@ body {
 	font-style: italic;
 	color: #000;
 	border-top: 1px #4BA034 solid;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+	#page {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	
+	html {
+		padding: 0px;
+	}
+	
+	body {
+		margin: 0px;
+		padding: 0px;
+		max-width: 100%;
+		background: #FFF;
+	}
+
+	#page {
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+	}
+
+	#header img {
+		width: 95%;
+		padding: 2.5%;
+		padding-bottom: 0%;
+		height: auto;
+	}
+
+	#header p {
+		width: 100%;
+		padding: 0%;
+		margin: 0%;
+		padding-bottom: 1%;
+		text-align: center;
+		font-family: "Trebuchet MS";
+		font-size: 1.25em;
+		font-weight: bold;
+		color: #000;
+	}
+
+	#menu {
+		margin: 0%;
+		width: 100%;
+		border-top: 1px #4BA034 solid;
+	}
+
+	#menu a {
+		display: block;
+		text-decoration: none;
+		font-family: "Helvetica Neue";
+		color: #F00;
+		font-weight: bold;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+	
+	#menu a[href] {
+		color: #000;
+	}
+
+	#menu .active {
+		font-weight: bold;
+		color: #4BA034;
+	}
+
+	#menu .active:hover {
+		color: #4BA034;
+	}
+
+	#menu a[href]:hover, #menu a[href]:focus {
+		color: #4BA034;
+	}
+
+	#nav {
+		clear: both;
+		border-bottom: 1px #4BA034 solid;
+		border-top: 1px #4BA034 solid;
+		padding-bottom: 1%;
+		padding-top: 1%;
+	}
+	
+	#content {
+		width: 95%;
+		padding: 2.5%;
+		background-color: #FFF;
+	}
+
+	#nav {
+		font-size: 0.85em;
+	}
+
+	#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+		color: #4BA034;
+		font-family: "Helvetica Neue";
+	}
+
+	#footer {
+		text-align: center;
+		font-size: 0.8em;
+		font-style: italic;
+		color: #000;
+		border-top: 1px #4BA034 solid;
+	}
+}
+
+@media print {
+	#page {
+		width: 100%;
+	}
+	
+	#header {
+		width: 100%;
+	}
+	
+	#menu {
+		display: none;
+	}
+	
+	#nav {
+		clear: both;
+	}
 }
 
