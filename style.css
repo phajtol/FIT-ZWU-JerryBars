@@ -56,12 +56,12 @@ body {
 #menu .active {
 	font-weight: bold;
 	background-color: #FFF;	
-	color: #4BA034;
+	color: #000;
 	cursor: default;
 }
 
 #menu .active:hover {
-	color: #4BA034;
+	color: #000;
 }
 
 #menu a:hover {
@@ -82,6 +82,7 @@ body {
 #content {
 	clear: right;
 	width: 90%;
+	height: auto;
 	padding: 5%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -177,6 +178,26 @@ body {
 
 #content .product a[href]:hover {
 	text-decoration: none;
+}
+
+#content #buy {
+	display: block;
+	width: 20%;
+	height: 35px;
+	line-height: 35px;
+	float: right;
+	margin-left: 19%;
+	margin-right: 19%;
+	text-align: center;
+	background-color: #00CB34;
+	border-radius: 5px;
+	color: #F00;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	margin-bottom: 25px;
+	cursor: default;
 }
 
 #nav {
@@ -309,6 +330,12 @@ body {
 		padding: 5%;
 		border-bottom: 1px #999 dashed;
 	}
+	
+	#content #buy {
+		width: 60%;
+		margin-left: 19%;
+		margin-right: 19%;
+	}
 
 	#nav {
 		font-size: 0.85em;
@@ -339,6 +366,23 @@ body {
 	
 	#menu {
 		display: none;
+	}
+	
+	#content .product {
+		width: 48%;
+		padding: 1%;
+	}
+	
+	#content .product dd {
+		font-size: 1em;
+	}
+	
+	#content #buy {
+		display: none;
+	}
+	
+	#content h2 {
+		font-size: 1.4em;
 	}
 	
 	#nav {
