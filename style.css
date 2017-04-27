@@ -116,6 +116,10 @@ body {
 	color: #4BA034;
 }
 
+#content a[href]:visited {
+	color: #551A8B;
+}
+
 #content a:hover, #content a[href]:hover {
 	text-decoration: none;
 }
