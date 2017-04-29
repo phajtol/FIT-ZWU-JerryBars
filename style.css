@@ -8,6 +8,7 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 90em;
 }
 
 #header {
@@ -16,6 +17,10 @@ body {
 
 #header img {
 	float:left;
+	width: auto;
+	height: auto;
+	max-height: 5em;
+	max-width: 25em;
 }
 
 #header p {
@@ -31,7 +36,7 @@ body {
 	clear: both;
 	float: right;
 	margin: 0%;
-	margin-right: 15px;
+	margin-right: 1em;
 }
 
 #menu > li {
@@ -40,13 +45,13 @@ body {
 }
 
 #menu a {
-	padding: 5px;
-	margin-right: 10px;
+	padding: 0.4em;
+	margin-right: 0.75em;
 	text-decoration: none;
 	font-family: "Helvetica Neue";
 	color: #F00;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 0.33em;
+	border-top-right-radius: 0.33em;
 	font-weight: bold;
 }
 
@@ -81,7 +86,7 @@ body {
 }
 
 #nav {
-	border-bottom: 1px #4BA034 solid;
+	border-bottom: 0.1em #4BA034 solid;
 	padding-bottom: 1%;
 	padding-left: 0%;
 }
@@ -103,7 +108,7 @@ body {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	background-color: #FFF;
-	border-radius: 15px;
+	border-radius: 1em;
 }
 
 #content a {
@@ -219,18 +224,18 @@ body {
 }
 
 #content .galleryImage a img {
-	border: 1px #F00 solid;
+	border: 0.1em #F00 solid;
 	border-radius: 5px;
 	cursor: default;
 }
 
 #content .btn {
 	display: block;
-	height: 35px;
-	line-height: 35px;
+	height: 2em;
+	line-height: 2em;
 	text-align: center;
 	background-color: #00CB34;
-	border-radius: 5px;
+	border-radius: 0.33em;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: "Helvetica Neue";
@@ -246,13 +251,29 @@ body {
 	text-decoration: underline;
 }
 
-#nav {
-	font-size: 0.85em;
-}
-
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
 	color: #4BA034;
 	font-family: "Helvetica Neue";
+}
+
+#content fieldset {
+	border: none;
+}
+
+#content fieldset legend {
+	display: none;
+}
+
+#content fieldset input[type=text] {
+	width: 20em;
+}
+
+#content fieldset textarea {
+	max-width: 90%;
+}
+
+#content ul {
+	padding-left: 0%;
 }
 
 #footer {
@@ -261,10 +282,10 @@ body {
 	font-size: 0.8em;
 	font-style: italic;
 	color: #000;
-	border-top: 1px #4BA034 solid;
+	border-top: 0.1em #4BA034 solid;
 }
 
-@media screen and (min-width: 761px) and (max-width: 1024px) {
+@media screen and (min-width: 50em) and (max-width: 90em) {
 	#page {
 		width: 100%;
 		margin-left: auto;
@@ -272,22 +293,22 @@ body {
 	}	
 }
 
-@media screen and (min-width: 761px) and (max-width: 1600px) {
+@media screen and (min-width: 50em) and (max-width: 69em) {
 	#content .product, #content .galleryImage {
 		width: 45%;
 		padding: 2%;
 	}
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 49.9em) {
 	
 	html {
-		padding: 0px;
+		padding: 0%;
 	}
 	
 	body {
-		margin: 0px;
-		padding: 0px;
+		margin: 0%;
+		padding: 0%;
 		max-width: 100%;
 		background: #FFF;
 	}
@@ -322,7 +343,7 @@ body {
 	#menu {
 		margin: 0%;
 		width: 100%;
-		border-top: 1px #4BA034 solid;
+		border-top: 0.1em #4BA034 solid;
 	}
 	
 	#menu li {
@@ -358,8 +379,8 @@ body {
 
 	#nav {
 		clear: both;
-		border-bottom: 1px #4BA034 solid;
-		border-top: 1px #4BA034 solid;
+		border-bottom: 0.1em #4BA034 solid;
+		border-top: 0.1em #4BA034 solid;
 		padding-bottom: 1%;
 		padding-top: 1%;
 	}
@@ -378,7 +399,7 @@ body {
 	#content .product, #content .galleryImage {
 		width: 90%;
 		padding: 5%;
-		border-bottom: 1px #999 dashed;
+		border-bottom: 0.1em #999 dashed;
 	}
 	
 	#content .btn {
@@ -403,7 +424,7 @@ body {
 		font-size: 0.8em;
 		font-style: italic;
 		color: #000;
-		border-top: 1px #4BA034 solid;
+		border-top: 0.1em #4BA034 solid;
 	}
 }
 
