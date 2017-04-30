@@ -133,12 +133,13 @@ body {
 	color: #00F;
 }
 
-#content .product a[class=btn][href] {
+#content a[class=btn][href] {
 	color: #FFF;
 	text-decoration: none;
+	cursor: pointer;
 }
 
-#content .product a[class=btn] {
+#content a[class=btn] {
 	color: #F00;
 	text-decoration: none;
 }
@@ -170,6 +171,22 @@ body {
 	height: 40%;
 }
 
+#content .sum {
+	width: 100%;
+}
+
+#content .sum dd {
+	margin-bottom: 0%;
+}
+
+#content .sum dt, #content .sum dd { 
+	float: left;
+}
+
+#content .sum dt {
+	clear: both;
+}
+
 #content .galleryImage dd {
 	font-size: 1em;
 }
@@ -181,6 +198,7 @@ body {
 	overflow: hidden;
 	display: inline-block;
 	vertical-align: top;
+	page-break-inside: avoid;
 }
 
 #content .product img {
@@ -196,7 +214,6 @@ body {
 
 #content .product dl, #content .galleryImage dl {
 	float: left;
-	width: auto;
 	width: 55%;
 	margin-left: 5%;
 }
@@ -215,7 +232,7 @@ body {
 }
 
 #content .product a[href] {
-	text-decoration: underline;
+	text-decoration: none;
 	cursor: pointer;
 }
 
@@ -223,10 +240,45 @@ body {
 	text-decoration: none;
 }
 
+#content .order {
+	width: 100%;
+	border-top: 0.1em #4BA034 dashed;
+	border-bottom: 0.1em #4BA034 dashed;
+}
+
+#content .order img {
+	width: auto;
+	height: auto;
+	max-width: 15%;
+}
+
+#content .order dl {
+	width: auto;
+	max-width: 30%;
+	float: right;
+}
+
+#content .order dt, #content .order dd {
+	float: left;
+}
+#content .order dt {
+	clear: both;
+}
+
+#content .order p {
+	clear: none;
+	float: left;
+	width: 54%;
+}
+
 #content .galleryImage a img {
 	border: 0.1em #F00 solid;
 	border-radius: 5px;
 	cursor: default;
+}
+
+#content .clear {
+	clear: both;
 }
 
 #content .btn {
@@ -297,6 +349,36 @@ body {
 	#content .product, #content .galleryImage {
 		width: 45%;
 		padding: 2%;
+	}
+	
+	#content .order {
+		width: 100%;
+	}
+
+	#content .order img {
+		width: auto;
+		height: auto;
+		max-width: 15%;
+	}
+
+	#content .order dl {
+		width: auto;
+		max-width: 30%;
+		float: right;
+	}
+
+	#content .order dt, #content .order dd {
+		float: left;
+	}
+	
+	#content .order dt {
+		clear: both;
+	}
+
+	#content .order p {
+		clear: none;
+		float: left;
+		width: 44%;
 	}
 }
 
@@ -397,9 +479,41 @@ body {
 	}
 	
 	#content .product, #content .galleryImage {
-		width: 90%;
-		padding: 5%;
+		width: 97%;
+		padding: 1%;
 		border-bottom: 0.1em #999 dashed;
+	}
+	
+	#content .order {
+		width: 90%;
+	}
+
+	#content .order img {
+		width: auto;
+		height: auto;
+		max-width: 90%;
+	}
+
+	#content .order dl {
+		width: 100%;
+		max-width: 100%;
+		float: right;
+	}
+
+	#content .order dt, #content .order dd {
+		float: left;
+	}
+	
+	#content .order dd {
+		margin-bottom: 0%;
+	}
+	
+	#content .order dt {
+		clear: both;
+	}
+
+	#content .order p {
+		display: none;
 	}
 	
 	#content .btn {
@@ -474,6 +588,18 @@ body {
 	
 	#nav {
 		clear: both;
+	}
+}
+
+@media screen and (max-width: 29.9em){
+	#content h2 {
+		font-size:7vw;
+	}
+}
+
+@media screen and (min-width:30em){
+	#content h2 {
+		font-size: 1.5em;
 	}
 }
 
